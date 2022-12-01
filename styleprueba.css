@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  margin: 40px 40px 40px 40px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 12%;
+  transition: all 0.5s ease;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 3px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+li:hover {
+  text-decoration: none;
+  color: rgba(224, 156, 154, 255);
+  transition: 0.1s;
+}
+.navbar a.active {
+  color: var(--main-color);
+}
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin-left: 357px;
+}
+.main a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user i {
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 7px;
+}
+.main a:hover {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 14px 2%;
+    transition: 0.2s;
+    margin-left: 150px;
+  }
+  .main1 {
+    background-color: rgba(0, 0, 26, 255);
+    display: block;
+    width: 1000%;
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+  }
+  .container {
+    margin-right: 250px;
+  }
+
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 1090px) {
+  #menu-icon {
+    display: block;
+  }
+
+  header {
+    padding: 14px 2%;
+    transition: 0.2s;
+    margin-left: 90px;
+  }
+
+  .main {
+    margin-left: 290px;
+  }
+
+  .main1 {
+    display: block;
+    width: 1000%;
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+  }
+
+  .container-sidebar img {
+    padding: 20px 40px 5px 0;
+    width: 50px;
+    height: 170px;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 200;
+    height: 34vh;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+
+  .container {
+    background-color: rgb(184, 161, 132);
+  }
+  .navbar a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all 0.5s ease;
+  }
+  .navbar a:hover {
+    color: var(--text-color);
+    transform: translateY(5px);
+  }
+  .navbar a.active {
+    color: var(--text-color);
+  }
+  .navbar.open {
+    right: 2%;
+  }
+}
+
+.img {
+  width: 690px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 180px; */
+}
+
+.main1 {
+  background-color: rgba(0, 0, 26, 255);
+  display: block;
+  width: 600%;
+  height: 100%;
+  padding: 10px 10px 10px 10px;
+  margin-left: 10px;
+}
+
+main {
+  padding: 10px 150px 60px 190px;
+  display: block;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.container-sidebar {
+  display: block;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-sidebar img {
+  padding: 20px 90px 5px 0;
+  width: 290px;
+  height: 170px;
+}
+
+.container-sidebar p {
+  padding: 25px 100px 10px 5px;
+  font-size: 15px;
+  opacity: 0.8;
+  color: rgba(0, 0, 26, 255);
+}
+
+.container-sidebar button {
+  margin: 10px 20px 10px 5px;
+  background-color: rgba(241, 93, 80, 255);
+  padding: 5px 20px 5px 20px;
+  justify-content: center;
+  text-align: center;
+  height: 30px;
+  border: none;
+  color: white;
+  font-size: 11px;
+}
+
+.container-sidebar button:hover {
+  background-color: rgba(0, 0, 26, 255);
+}
+.main1 h1 {
+  padding: 10px 10px 10px 10px;
+  color: rgba(235, 172, 82, 255);
+}
+
+.main1 h4 {
+  padding: 22px 10px 5px 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.main1 h4:hover {
+  color: rgba(235, 172, 82, 255);
+}
+
+.main1 p {
+  font-size: 11px;
+  padding: 5px 10px 20px 10px;
+  opacity: 0.5;
+  color: white;
+}
+
+hr {
+  height: -1px;
+  font-size: 20px;
+  opacity: 0.5;
+  color: whitesmoke;
+  padding: 0 10px 0 10px;
+}
+
+.container-footer {
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 190px;
+  margin-right: 100px;
+}
+
+.container-footer img {
+  width: 85px;
+  height: 118px;
+}
+
+.container-footer .img1 {
+  display: block;
+  display: flex;
+  padding: 0 10px 10px 10px;
+}
+
+.contents {
+  padding: 5px 10px 20px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.contents h5 {
+  padding: 0 0 10px 0;
+  font-size: 25px;
+  color: rgba(201, 202, 206, 255);
+}
+
+.contents h4 {
+  padding: 0 0 10px 0;
+  color: rgba(0, 0, 26, 255);
+  font-size: 15px;
+}
+
+.contents h4:hover {
+  color: rgba(241, 93, 80, 255);
+}
+
+.contents p {
+  padding: 0 0 3px 0;
+  font-size: 15px;
+}
+
+.contents p {
+  font-size: 13px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+  opacity: 0.8;
+  color: rgba(0, 0, 26, 255);
+}
+
+.container-footer .img2 {
+  display: block;
+  display: flex;
+  padding: 0 10px 10px 10px;
+}
+
+.container-footer .img3 {
+  display: block;
+  display: flex;
+  padding: 0 10px 10px 10px;
+}
+
+.container-firs {
+  width: 100%;
+}
